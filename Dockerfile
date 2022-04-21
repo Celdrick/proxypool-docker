@@ -127,8 +127,5 @@ COPY ./conf/proxypool/source.yaml /proxypool-src/conf/proxypool/source.yaml
 # 容器信号处理
 STOPSIGNAL SIGQUIT
 
-# 入口
-ENTRYPOINT ["dumb-init"]
-
 # 运行proxypool
 CMD ["/proxypool-src/proxypool", "-c", "/proxypool-src/conf/proxypool/config.yaml", "-d"]
