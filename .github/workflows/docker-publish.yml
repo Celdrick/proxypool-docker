@@ -75,7 +75,7 @@ jobs:
         file: ./Dockerfile
         platforms: linux/amd64
         push: true
-        tags: ${{ secrets.DOCKERHUB_USERNAME }}/proxypool:${{ matrix.DOCKER_TAG }}
+        tags: ${{ secrets.DOCKER_USERNAME }}/proxypool:${{ matrix.DOCKER_TAG }}
       
     - name: 上传至阿里云
       id: buildAndPushImage
