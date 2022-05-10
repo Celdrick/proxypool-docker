@@ -81,7 +81,7 @@ jobs:
       id: buildAndPushImage
       uses: risfeng/docker-image-build-push-action@v1.0
       with:
-        registry_url: 'registry.cn-hongkong.aliyuncs.com'
+        registry_url: 'registry.cn-hangzhou.aliyuncs.com'
         namespaces: 'celdrick'
         repository_name: 'proxypool'
         user_name: ${{ secrets.ALIYUN_USERNAME }}
